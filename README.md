@@ -1,4 +1,4 @@
-# Starter for typescript tslint mocha chai
+# Starter for typescript, tslint, mocha and chai
 
 ## typscript
 
@@ -6,7 +6,7 @@
 
 `build` will have all the typescript output file
 
-[tsconfig](./tsconfig.json)
+[tsconfig](./tsconfig.json) has the typscript settings.
 
 ## tslint
 
