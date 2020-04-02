@@ -1,0 +1,35 @@
+{
+  "name": "typescript-node-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint --project .",
+    "pretest": "npm run lint",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts",
+    "start:dev": "nodemon",
+    "prebuild": "npm run lint",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^13.9.8",
+    "@types/chai": "*",
+    "@types/mocha": "*",
+    "@types/node-fetch": "*",
+    "chai": "*",
+    "chai-deep-match": "*",
+    "mocha": "*",
+    "mocha-typescript": "*",
+    "node-fetch": "*",
+    "nodemon": "*",
+    "rimraf": "*",
+    "ts-node": "*",
+    "source-map-support": "*",
+    "typescript": "^3.8.3"
+  }
+}
